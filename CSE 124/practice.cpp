@@ -1,8 +1,8 @@
-#import <iostream>
+#include <iostream>
 using namespace std;
 
 int main()
 {
-    cout << "cry";
+    cout << "hello world\n";
     return 0;
 }
