@@ -9,5 +9,5 @@ number_of_adults = int(input("How many adults are there? "))
 sales_tax_rate = float(input("What is the sales tax rate? "))
 
 # Calculations for subtotal, tax, and total.
-string(subtotal) = (float(number_of_children) * price_for_child_meal) + (float(number_of_adults) * price_for_adult_meal)
-print(f"\n")
+subtotal = (float(number_of_children) * price_for_child_meal) + (float(number_of_adults) * price_for_adult_meal)
+print(f"\n{subtotal:.2f}")
