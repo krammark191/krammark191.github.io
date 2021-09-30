@@ -2,7 +2,7 @@ import math
 import time
 
 # User input and variable allocation.
-price_for_child_meal = float(input("What is the price of a child's meal? "))
+price_for_child_meal = float(input("\nWhat is the price of a child's meal? "))
 price_for_adult_meal = float(input("What is the price of an adult's meal? "))
 number_of_children = int(input("How many children are there? "))
 number_of_adults = int(input("How many adults are there? "))
