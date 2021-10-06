@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap');
+
+:root{
+    --primary-font: "Roboto";
+    --quote-font: "Lora";
+}
+body {
+    background-color: #F9A6C8
+}
+.white-text {
+    color: white;
+}
+.center-align {
+    text-align: center;
+    padding: 45px;
+    font-family: var(--primary-font);
+}
+.left-align {
+    text-align: left;
+    padding-left: 840px;
+}
+.bold {
+    text-align: center
+    var(--quote-font)
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-family: var(--quote-font);
+    font-size: small;
+}
+h4 {
+    font-family: var(--quote-font);
+    font-size: 35px;
+}
+nav a {
+    text-decoration: none;
+}
+nav a:link, nav a:visited {
+    color: white;
+}
+nav a:hover {
+    color: black;
+}
