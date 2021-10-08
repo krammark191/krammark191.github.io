@@ -3,7 +3,7 @@ import time
 
 print ("\nWelcome to the velocity calculator. Please enter the following:\n")
 
-# User input below.
+# User input below, stored as floating point variables.
 mass = float(input("Mass (in kg): "))
 gravity = float(input("Gravity (in m/s^2, 9.8 for Earth, 24 for Jupiter): "))
 time_variable = float(input("Time (in seconds): "))
@@ -12,7 +12,7 @@ cross_sectional_area = float(input("Cross sectional area (in m^2): "))
 drag_constant = float(input("Drag constant (0.5 for sphere, 1.1 for cylinder): "))
 time.sleep(1)
 
-# Calculates c and prints to console. c = 1/2*p*A*C
+# Calculates c (the force of drag against the object) and prints to console. c = 1/2*p*A*C
 c = (1 / 2) * fluid_density * cross_sectional_area * drag_constant
 print(f"\nThe inner value of c is: {c:.3f}")
 
