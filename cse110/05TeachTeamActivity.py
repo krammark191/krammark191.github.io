@@ -5,6 +5,7 @@ number_grade = int(input("\nWhat is your grade percentage? "))
 letter_grades = ['F', 'F', 'F', 'F', 'F', 'F', 'D', 'C', 'B', 'A', 'A']
 letter_grade = letter_grades[number_grade // 10]
 
+# Check for minus grade or plus grade.
 sign = ""
 if int(number_grade) % 10 < 3 and letter_grade != 'F':
     sign = "-"
