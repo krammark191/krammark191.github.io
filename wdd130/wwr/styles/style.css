@@ -31,6 +31,7 @@ nav a {
     text-align: center;
     color: var(--nav-link-color);
     text-decoration: none;
+    padding: 35px;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
@@ -40,6 +41,10 @@ nav a {
 }
 main section {
     text-align: center;
+    color: var(--paragraph-color-on-color);
+}
+main section img {
+    box-sizing: border-box;
 }
 #background {
     height: 725px;
@@ -47,6 +52,13 @@ main section {
 }
 body {
     background-color: var(--paragraph-background-color); 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
 }
 header {
     background-color: var(--primary-color);
@@ -56,9 +68,14 @@ nav a:hover {
     color: var(--nav-hover-link-color);
 }
 .book, .join {
-    background-color: var(--nav-background-color);
+    background-color: var(--accent1-color);
     color: var(--nav-link-color);
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    text-align: center;
 }
 .book:hover, .join:hover {
     background-color: var(--nav-hover-background-color);
@@ -66,21 +83,32 @@ nav a:hover {
 }
 .msg {
     background-color: var(--secondary-color);
+    line-height: 1.5em;
+    padding: 35px;
+    color: var(--paragraph-color-on-color);
 }
 footer{
     background-color: var(--secondary-color);
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 .home-title {
     color: var(--headline-color-on-color);
+    font-family: 'Rock Salt';
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4 {
     color: var(--headline-color-on-color);
 }
 .msg h2 {
-    color: var(--secondary-color);
+    color: var(--paragraph-color-on-color);
+    font-family: 'Rock Salt';
 }
 .msg p {
-    color: var(--secondary-color);
+    color: var(--paragraph-color-on-color);
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer h3 {
     color: var(--paragraph-color-on-color);
@@ -96,7 +124,20 @@ footer a:hover {
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
+}
+#logo_link {
+    padding-top: 5px;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid var(--accent2-color);
 }
