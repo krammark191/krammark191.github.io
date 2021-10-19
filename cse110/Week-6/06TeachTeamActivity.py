@@ -15,27 +15,27 @@ if is_second_rider.lower() == "yes":
     if second_rider_age >= 12 and second_rider_age < 18:
         second_rider_golden_passport = input("Does this rider have a golden passport (yes/no)? ")
 
-    # Rule 1
+    # Rule 1.
     if first_rider_height < 36 or second_rider_height < 36:
         can_ride = False
     else:
-        # Rule 3
+        # Rule 3.
         if first_rider_age >= 18 or second_rider_age >= 18 or first_rider_golden_passport.lower() == "yes" or second_rider_golden_passport.lower() == "yes":
-            # At least one is an adult
+            # At least one is an adult.
             can_ride = True
         else:
-            # Neither is an adult
+            # Neither is an adult.
 
-            # Rule 4
+            # Rule 4.
             if first_rider_age >= 12 and first_rider_height >= 52 and second_rider_age >= 12 and second_rider_height >= 52:
                 can_ride = True
             elif (first_rider_age >= 16 and second_rider_age >= 14) or (first_rider_age >= 14 and second_rider_age >= 16):
-                # Rule 6
+                # Rule 6.
                 can_ride = True
             else:
                 can_ride = False
-else: # There is only one rider
-    # Rule 2
+else: # There is only one rider.
+    # Rule 2.
     if (first_rider_age >= 18 or first_rider_golden_passport.lower() == "yes") and first_rider_height >= 62:
         can_ride = True
     else:
