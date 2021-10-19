@@ -48,28 +48,57 @@ while dwarf_class != 'scout' and dwarf_class != 'gunner' and dwarf_class != 'eng
     dwarf_class = dwarf_class.lower()
     time.sleep(1)
 
-# Determine the path that the user is on based upon their input.
-if dwarf_class == 'scout':
+# Universal mission begin statement for all classes.
+def mission_begin():
+    print("The mission begins, the droppod lands in a dark cavern.\n"
+    "As your team disembarks the droppod its engines roar to life and\n"
+    "it leaves you and your team alone. Let the mission begin.\n")
+
+# Scout track begins here.
+def scout_class():
     print("\nYou have chosen the Scout Class!\n"
     "Your primary weapon is an automatic assault rifle, and your secondary"
     " weapon is a double-barrel shotgun.\n"
     "Your mobility tool is a rechargable grapple hook, and your misc utility"
     " is a flare gun.\n")
-elif dwarf_class == 'gunner':
+    mission_begin()
+    
+
+
+# Gunner track begins here.
+def gunner_class():
     print("\nYou have chosen the Gunner Class!\n"
     "Your primary weapon is a minigun, and your secondary"
     " weapon is a heavy revolver.\n"
     "Your mobility tool is a zipline gun, and your misc utility"
     " is a deployable shield.\n")
-elif dwarf_class == 'engineer':
+    mission_begin()
+
+# Engineer track begins here.
+def engineer_class():
     print("\nYou have chosen the Engineer Class!\n"
     "Your primary weapon is a semi-automatic shotgun, and your secondary"
     " weapon is a propelled grenade launcher.\n"
     "Your mobility tool is a deployable platform gun, and your misc utility"
     " is a deployable sentry-turret.\n")
-else:
+    mission_begin()
+
+# Driller track begins here.
+def driller_class():
     print("\nYou have chosen the Driller Class!\n"
     "Your primary weapon is a flamethrower, and your secondary"
     " weapon is a plasma pistol.\n"
     "Your mobility tool is a pair of drills, and your misc utility"
     " is C4.\n")
+    mission_begin()
+
+
+# Determine the path that the user is on based upon their input.
+if dwarf_class == 'scout':
+    scout_class()
+elif dwarf_class == 'gunner':
+    gunner_class()
+elif dwarf_class == 'engineer':
+    engineer_class()
+else:
+    driller_class()
