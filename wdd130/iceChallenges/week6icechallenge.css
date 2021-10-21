@@ -1,0 +1,65 @@
+body, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: block;
+    margin: 8px;
+}
+div {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+section {
+    display: grid;
+    grid-template-columns: 7% max-content 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr max-content 1fr max-content;
+    box-sizing: border-box;
+    justify-content: center;
+    padding-top: 50px;
+}
+h1 {
+    color: #716E6D;
+    text-align: center;
+    grid-column: 1/4;
+    font-size: 50px;
+}
+p {
+    color: gray;
+    text-align: center;
+    grid-column: 1/4;
+    font-size: 22px;
+    padding-left: 20px;
+}
+#email, #name {
+    grid-column: 1/4;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding-left: 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 86%;
+    justify-self: center;
+    height: 100px;
+}
+#opt {
+    grid-column: 2/3;
+}
+#label {
+    color: gray;
+    padding-bottom: 12px;
+}
+button {
+    grid-column: 1/4;
+    color: white;
+    background-color: #E0996B;
+    border-radius: 8px;
+    font-family: 'Fira Mono';
+    font-size: 24px;
+    box-sizing: border-box;
+    width: 230px;
+    justify-self: center;
+    height: 75px;
+    border: 0px;
+}
