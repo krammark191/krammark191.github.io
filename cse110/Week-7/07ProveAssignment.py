@@ -23,7 +23,7 @@ pixels_original[150, 150] = (200, 3, 85)
 pixels_original[200, 100] = (255, 255, 255)
 image_original.show()
 
-image_original.save("image_original_copy.jpg")
+image_original.save("cse110/week-7/cse110_images/image_original_copy.jpg")
 
 # End of milestone.
 # image_new = Image.new("RGB", image_original.size)
