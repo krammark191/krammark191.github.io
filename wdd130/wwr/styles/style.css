@@ -62,7 +62,7 @@ nav a {
 .button.box {
     text-align: center;
 }
-main .home-grid {
+main {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
