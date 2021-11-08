@@ -105,6 +105,13 @@ nav a:hover {
     margin-top: 50px;
     border-radius: 5px;
     text-align: center;
+    justify-content: center;
+}
+div .button-box {
+    text-align: center;
+    justify-content: center;
+    width: 140px;
+    margin: 0 auto;
 }
 .book:hover, .join:hover {
     background-color: var(--nav-hover-background-color);
