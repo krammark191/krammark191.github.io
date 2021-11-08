@@ -94,7 +94,7 @@ header {
 }
 nav a:hover {
     background-color: var(--nav-hover-background-color);
-    color: var(--nav-hover-link-color);
+    color: white;
 }
 .book, .join {
     background-color: var(--accent1-color);
@@ -133,6 +133,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-decoration: none;
 }
 .home-title {
     color: var(--headline-color-on-color);
@@ -154,14 +155,14 @@ h4 {
 }
 footer h3 {
     color: var(--paragraph-color-on-color);
-    text-decoration: underline;
+    text-decoration: none;
 }
 footer a {
     color: var(--nav-link-color);
     text-decoration: none;
 }
 footer a:hover {
-    color: var(--nav-hover-link-color);
+    color: white;
     text-decoration: underline;
 }
 .icon {
