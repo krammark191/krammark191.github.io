@@ -18,12 +18,14 @@ for number in numbers:
 print(f"The sum is: {sum}")
 
 # Average calculation.
-count = len(numbers)
-average = sum / count
+if sum != 0:
+    average = sum / len(numbers)
+else:
+    average = 0
 print(f"The average is: {average}")
 
 # Largest number calculation.
-max_number = 0
+max_number = -100000000000
 for number in numbers:
     if number > max_number:
         max_number = number
