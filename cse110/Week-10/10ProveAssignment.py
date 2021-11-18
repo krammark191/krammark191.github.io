@@ -39,8 +39,8 @@ while answer != 5:
     # This displays the total of all the items in the shopping cart.
     elif answer == 4:
         sum = 0
-        for j in range(len(item_price)):
-            sum += item_price[j]
+        for i in range(len(item_price)):
+            sum += item_price[i]
         print(f"The total price of the items in the shopping cart is ${sum:.2f}")
 
     # This quits the program.
