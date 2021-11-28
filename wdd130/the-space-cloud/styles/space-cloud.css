@@ -1,0 +1,164 @@
+:root {
+    --primary-color: black;
+    --secondary-color: #402241;
+    --accent1-color: #446b71;
+    --accent2-color: #246d3c;
+
+    --headline-color-on-white: #396E94;
+    --headline-color-on-color: white;
+    --paragraph-color-on-white: #396E94;
+    --paragraph-color-on-color: white;
+    --paragraph-background-color: #396E94;
+    --nav-link-color: #396E94;
+    --nav-background-color: #D4AC0D;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #396E94;
+}
+
+html {
+    background-color: black;
+}
+
+.logo {
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.pic {
+    width: 100%;
+}
+
+#content {
+    margin: 0 auto;
+    background-color: var(--primary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 31px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 50px;
+    grid-row-gap: 50px;
+}
+
+#space-history-para {
+    grid-column: 1/2;
+    grid-row: 1;
+    color: var(--accent2-color);
+    padding-left: 3vw;
+    padding-right: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#space-history-pic {
+    grid-column: 2/5;
+    grid-row: 1;
+}
+
+#james-webb-pic {
+    grid-column: 1/4;
+    grid-row: 2;
+}
+
+#james-webb-para {
+    grid-column: 4/5;
+    grid-row: 2;
+    color: var(--accent2-color);
+    padding-left: 3vw;
+    padding-right: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#space-history-para p {
+    font-size: 25px;
+    flex-grow: 1;
+}
+
+#space-history-para h1 {
+    font-size: 40px;
+}
+
+#james-webb-para h1 {
+    font-size: 40px;
+}
+
+#james-webb-para p {
+    font-size: 17.5px;
+    flex-grow: 1;
+}
+
+.link {
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+#button1 {
+    text-align: center;
+    align-self: center;
+    width: 240px;
+    margin-bottom: 6vw;
+}
+#button2 {
+    text-align: center;
+    align-self: center;
+    width: 240px;
+    margin-bottom: 6vw;
+}
+footer {
+    background-color: var(--secondary-color);
+    padding: 25px 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+}
+footer h3 {
+    color: var(--paragraph-color-on-color);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+footer a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+}
