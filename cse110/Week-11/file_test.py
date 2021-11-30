@@ -1,6 +1,5 @@
 with open("cse110/Week-11/data.txt") as file:
     for line in file:
-        print(line)
         words = line.split(":")
         name = words[0]
         favorite_number = 0.0
@@ -15,4 +14,4 @@ with open("cse110/Week-11/data.txt") as file:
         except:
             pass
 
-        print(f"{name}, your tithing")
+        print(f"{name}, your tithing is ${tithing:.2f} and your favorite number is {favorite_number}")
