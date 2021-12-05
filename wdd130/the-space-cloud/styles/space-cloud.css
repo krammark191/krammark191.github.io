@@ -162,3 +162,29 @@ footer a:hover {
     color: white;
     text-decoration: none;
 }
+
+#sphipic1 {
+    grid-column: 2/5;
+    min-width: 80%;
+    justify-content: center;
+    grid-row: 1;
+}
+
+#moon-landing-para {
+    color: var(--accent2-color);
+    grid-column: 2/4;
+    grid-row: 1;
+    padding-top: 110%;
+}
+
+#space-station-pic {
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+#space-station-para {
+    grid-column: 2/4;
+    grid-row: 2;
+    color: var(--accent2-color);
+    padding-top: 85%;
+}
