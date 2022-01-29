@@ -1,11 +1,3 @@
-# print("Week" + 1)     # no, fails to compile
-print("Week", 1)        # yes
-print("Week" "1")       # no, outputs Week1
-print("Week" + str(1))  # no, outputs Week1
-print('Week 1')         # yes
-print(f"Week {'1'}")    # yes
-print("Week 1")         # yes
-print("Week", "1")      # yes
-print(f"Week {1}")      # yes
-print("Week" + "1")     # no, outputs Week1
-
+year = int(input("Enter year: "))
+isLeapYear = True if ((year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)) else False
+print(f"{year} is a leap year.") if isLeapYear else print(f"{year} is not a leap year.")
