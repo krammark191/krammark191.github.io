@@ -3,6 +3,10 @@ body {
     font-family: 'Kalam', cursive;
 }
 
+img {
+    max-width: 300px;
+}
+
 div {
     margin: 10px;
     text-align: center;
