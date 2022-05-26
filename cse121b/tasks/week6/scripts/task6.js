@@ -37,79 +37,49 @@ switch (dayOfWeek) {
 document.querySelector('#message1').textContent = message
 document.querySelector('#message2').textContent = anotherMessage
 
-const output = people => {
-  people.forEach(person => {
-    let article = document.createElement('article')
+const output = person => {
+  reset()
+  let article = document.createElement('article')
 
-    let name = document.createElement('h3')
-    name.textContent = person.name
+  let name = document.createElement('h3')
+  name.textContent = person.name
 
-    let mass = document.createElement('h4')
-    mass.textContent = person.mass + "kg"
+  let height = document.createElement('h4')
+  if (person.height == 'unknown') {
+    height.textContent = 'Unknown Height'
+  } else {
+    height.textContent = person.height + 'cm'
+  }
 
-    let gender = document.createElement('h4')
-    gender.textContent = person.gender
+  let mass = document.createElement('h4')
+  if (person.mass == 'unknown') {
+    mass.textContent = 'Unknown Mass'
+  } else {
+    mass.textContent = person.mass + 'kg'
+  }
 
-    article.appendChild(name)
-    article.appendChild(mass)
-    article.appendChild(gender)
+  let gender = document.createElement('h4')
+  gender.textContent = person.gender
 
-    document.querySelector('#people').appendChild(article)
-  })
+  article.appendChild(name)
+  article.appendChild(height)
+  article.appendChild(mass)
+  article.appendChild(gender)
+
+  document.querySelector('#person').appendChild(article)
 }
 
-const getPeople = async () => {
-  const response = await fetch('https://swapi.dev/api/people')
-  peopleList = await response.json()
-  output(peopleList['results'])
+const getPerson = async () => {
+  let value = Math.floor(Math.random() * 83) + 1
+  const response = await fetch(
+    'https://swapi.dev/api/people/' + value.toString()
+  )
+  person = await response.json()
+  output(person)
 }
-getPeople()
 
 const reset = () => {
-  document.querySelector('#people').innerHTML = ''
+  document.querySelector('#person').innerHTML = ''
 }
 
-const sortBy = () => {
-  reset()
-
-  let filter = document.querySelector('#sortBy').value
-
-  switch (filter) {
-    case 'ascending':
-      output(
-        peopleList.sort((person1, person2) => {
-          let personName1 = person1.name.toLowerCase()
-          let personName2 = person2.name.toLowerCase()
-          if (personName1 < personName2) return -1
-          else if (personName1 > personName2) return 1
-          else return 0
-        })
-      )
-      break
-    case 'descending':
-      output(
-        peopleList.sort((person1, person2) => {
-          let personName1 = person1.name.toLowerCase()
-          let personName2 = person2.name.toLowerCase()
-          if (personName1 > personName2) return -1
-          else if (personName1 < personName2) return 1
-          else return 0
-        })
-      )
-      break
-    default:
-      output(
-        peopleList.sort((person1, person2) =>
-          person1.name.toLowerCase() > person2.name.toLowerCase()
-            ? 1
-            : person2.name.toLowerCase() >
-              person1.name.toLowerCase()
-            ? -1
-            : 0
-        )
-      )
-      break
-  }
-}
-
-document.querySelector('#sortBy').addEventListener('change', sortBy)
+document.querySelector('#randomize').addEventListener('click', getPerson)
